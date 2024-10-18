@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THI lihor (Glimmer&Charm)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 100px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    canvas {
+      border: 2px solid #000;
+      background-color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+<h2>Basic Shape with html</h2>
+<canvas id="shapesCanvas" width="400" height="400"></canvas>
+
+<script>
+  const canvas = document.getElementById("shapesCanvas");
+  const ctx = canvas.getContext("2d");
+
+  // Draw a rectangle
+  ctx.fillStyle = "#8333ff";
+  ctx.fillRect(150, 50, 100, 100); // x, y, width, height
+
+  // Draw a circle
+  ctx.beginPath();
+  ctx.arc(200, 250, 50, 0, 2 * Math.PI); // x, y, radius, startAngle, endAngle
+  ctx.fillStyle = "#33b3ff";
+  ctx.fill();
+
+</script>
+
+</body>
+</html>
